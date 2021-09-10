@@ -97,7 +97,10 @@ public class GamingConsoleMenu {
 		
 		
 	}	
-	
+		/**
+		 * 
+		 * @return
+		 */
 		private static GamingConsole addConsole() {
 		
 		Scanner input = new Scanner(System.in);
