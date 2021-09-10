@@ -26,7 +26,7 @@ public class GamingConsoleMenu {
 		consoles.add(new GamingConsole ("Xbox Series x", "Microsoft", 2020) );
 		consoles.add(new GamingConsole ("Playstation 5", "Sony", 2020) );
 		
-		System.out.println(consoles.size());
+		
 		
 		Scanner input = new Scanner(System.in);
 		int choice;
@@ -39,14 +39,14 @@ public class GamingConsoleMenu {
 			switch(choice)
 			{
 				case 1:
-					for(int i =0; i < 3; i++)
+					for(int i = 0; i < consoles.size(); i++)
 					{
-						System.out.println();
 						System.out.println(consoles.get(i));
 						System.out.println();
 					}
 					break;
 				case 2: 
+					newConsole.addConsole();
 					break;
 				case 3: 
 					{
