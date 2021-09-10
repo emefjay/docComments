@@ -96,4 +96,29 @@ public class GamingConsoleMenu {
 		
 		
 	}	
+	
+		private GamingConsole addConsole() {
+		
+		Scanner input = new Scanner(System.in);
+		String consoleName;
+		String companyName;
+		int consoleYear;
+		int selection;
+		
+		
+		selection = 0;
+			
+		System.out.println("What is the name of the console you would like to add?");
+		consoleName = input.nextLine();
+		
+		System.out.println("What is the name of console's comapny?");
+		companyName = input.nextLine();
+		
+		System.out.println("What year was the console made?");
+		consoleYear = input.nextInt();
+		
+		return new GamingConsole(consoleName, companyName, consoleYear);
+			
+		}
+	
 }
