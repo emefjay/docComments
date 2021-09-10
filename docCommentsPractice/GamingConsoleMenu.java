@@ -46,7 +46,8 @@ public class GamingConsoleMenu {
 					}
 					break;
 				case 2: 
-					newConsole.addConsole();
+					addConsole();
+					consoles.add();
 					break;
 				case 3: 
 					{
@@ -97,7 +98,7 @@ public class GamingConsoleMenu {
 		
 	}	
 	
-		private GamingConsole addConsole() {
+		private static GamingConsole addConsole() {
 		
 		Scanner input = new Scanner(System.in);
 		String consoleName;
@@ -105,8 +106,6 @@ public class GamingConsoleMenu {
 		int consoleYear;
 		int selection;
 		
-		
-		selection = 0;
 			
 		System.out.println("What is the name of the console you would like to add?");
 		consoleName = input.nextLine();
