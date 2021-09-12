@@ -1,5 +1,12 @@
 package docCommentsPractice;
 
+/**
+ * 
+ * @author emmajuvenal
+ *The Gaming Console class.
+ *
+ *requires 
+ */
 public class GamingConsole {
 
 	private String consoleName;
@@ -7,12 +14,14 @@ public class GamingConsole {
 	private int releaseYear;
 	private static int consoleCounter = 0;
 	private int uniqueId;
-	
-	
+
 	/**
+	 * Constructor for class GamingConsole.
+	 * Includes parameters:
 	 * @param consoleName
 	 * @param companyName
 	 * @param releaseYear
+	 * Also includes a uniqueId property, which creates a new id for every new GamingConsole object created. 
 	 */
 	public GamingConsole(String consoleName, String companyName, int releaseYear) {
 		this.consoleName = consoleName;
@@ -22,14 +31,12 @@ public class GamingConsole {
 		this.consoleCounter = consoleCounter++;
 	}
 
-
 	/**
 	 * @return the consoleName
 	 */
 	public String getConsoleName() {
 		return consoleName;
 	}
-
 
 	/**
 	 * @return the companyName
@@ -38,7 +45,6 @@ public class GamingConsole {
 		return companyName;
 	}
 
-
 	/**
 	 * @return the releaseYear
 	 */
@@ -46,19 +52,18 @@ public class GamingConsole {
 		return releaseYear;
 	}
 
-
 	/**
 	 * @return the uniqueId
 	 */
 	public int getUniqueId() {
 		return uniqueId;
 	}
-
-	 @Override
+	/**
+	 * Prints properties of the GamingConsole object in String format.
+	 */
+	@Override
 	public String toString() {
 		return String.format(companyName + " " + releaseYear + " " + consoleName + " id: " + uniqueId);
 	}
-	
-	
-	
+
 }
